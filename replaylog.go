@@ -53,7 +53,7 @@ type File interface {
 // following constraints: they must be in the same order between instantiations,
 // individual ops must not be removed, new op's must be appended, each op must be
 // JSON-encodable, and must be forwards and backwards compatible.
-func New[State any](f File, ops ...Op[State]) (*Log[State], error) { // nolint: varnamelen
+func New[State any](f File, ops []Op[State]) (*Log[State], error) { // nolint: varnamelen
 	eventTypes := make(map[reflect.Type]int, len(ops))
 	for i, op := range ops {
 		eventTypes[reflect.TypeOf(op)] = i

@@ -43,7 +43,7 @@ func TestLog(t *testing.T) {
 	t.Run("Append", func(t *testing.T) {
 		t.Cleanup(func() { _ = w.Close() })
 
-		log, err := New[KV](w, ops...)
+		log, err := New[KV](w, ops)
 		assert.NoError(t, err)
 		t.Cleanup(func() { _ = log.Close() })
 
@@ -62,7 +62,7 @@ func TestLog(t *testing.T) {
 		assert.NoError(t, err)
 		defer r.Close()
 
-		log, err := New[KV](r, ops...)
+		log, err := New[KV](r, ops)
 		assert.NoError(t, err)
 		err = log.Replay(state)
 		assert.NoError(t, err)
@@ -80,7 +80,7 @@ func TestLog(t *testing.T) {
 		assert.NoError(t, err)
 		defer r.Close()
 
-		log, err := New[KV](r, ops...)
+		log, err := New[KV](r, ops)
 		assert.NoError(t, err)
 		err = log.Replay(state)
 		assert.NoError(t, err)
