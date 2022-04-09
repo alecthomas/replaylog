@@ -4,7 +4,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/alecthomas/replaylog)](https://goreportcard.com/report/github.com/alecthomas/replaylog) [![Slack chat](https://img.shields.io/static/v1?logo=slack&style=flat&label=slack&color=green&message=gophers)](https://gophers.slack.com/messages/CN9DS8YF3)
 
 A [replay log](https://ahmet.im/blog/the-replay-pattern/)
-([related](https://ahmet.im/blog/the-replay-pattern/))
+([related](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying))
 records the sequence of operations for mutating an empty
 state to its final state. The previous final state can then be reconstructed
 from the log by starting with an empty state, reading each operation
