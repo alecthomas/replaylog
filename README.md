@@ -1,6 +1,6 @@
 # A type safe implementation of a replay log for Go
 
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/alecthomas/replaylog)](https://pkg.go.dev/github.com/alecthomas/replaylog) [![GHA Build](https://github.com/alecthomas/participle/actions/workflows/ci.yml/badge.svg)](https://github.com/alecthomas/participle/actions)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/alecthomas/replaylog)](https://pkg.go.dev/github.com/alecthomas/replaylog) [![GHA Build](https://github.com/alecthomas/replaylog/actions/workflows/ci.yml/badge.svg)](https://github.com/alecthomas/replaylog/actions)
 [![Go Report Card](https://goreportcard.com/badge/github.com/alecthomas/replaylog)](https://goreportcard.com/report/github.com/alecthomas/replaylog) [![Slack chat](https://img.shields.io/static/v1?logo=slack&style=flat&label=slack&color=green&message=gophers)](https://gophers.slack.com/messages/CN9DS8YF3)
 
 A [replay log](https://ahmet.im/blog/the-replay-pattern/)
